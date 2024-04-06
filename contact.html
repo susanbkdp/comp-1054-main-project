@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Final Project">
+        <meta name="robots" content="index, follow">
+        <title>Final Project</title>
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="css/contact.css" >
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt = "header logo" class = "logo"> 
+                </a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <section class="h-1">
+                <h1>CONTACT US</h1>
+            </section>
+            <section class="contact-form">
+                <h2>CONTACT FORM</h2>
+                <p>We're here to help! Please fill in our contact form and we will process your query as soon as possible. We aim to respond within 6-8 hours.</p>
+                <form method="post" action="#">
+                    <p><input type="text" placeholder="First Name" required></p>
+                    <p><input type="text" placeholder="Surname" required></p>
+                    <p><input type="email" placeholder="Email" required></p>
+                    <p><input type="tel" placeholder="Phone Number"></p>
+                    <p>
+                        <select name="reason" required>
+                            <option value="" disabled selected>Select a reason for contacting</option>
+                            <option value="order_enquiry">Order Enquiry</option>
+                            <option value="product_enquiry">Product Enquiry</option>
+                            <option value="tracking_delivery">Tracking & Delivery</option>
+                            <option value="returns">Returns</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p><textarea name="message" placeholder="Your Message" required></textarea></p>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <section class="top-footer">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt = "footer logo" class = "logo"> 
+                    </a>
+                </div>
+                <div class="footer-form">
+                    <form method="post" action="#">
+                        <p><input type="text" placeholder="First Name" required></p>
+                        <p><input type="text" placeholder="Last Name" required></p>
+                        <p><input type="email" placeholder="Email" required></p>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <nav>
+                <menu>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </menu>
+            </nav>
+            <section class="bottom-footer">
+                <p><small>Website Created By Susan Barkhordarpour</small></p>
+            </section>
+        </footer>
+    </body>
+
+</html>

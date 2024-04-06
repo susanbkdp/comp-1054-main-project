@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* fonts */
+.paytone-one-regular {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans lao-style {
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: #f8f8f8;
+}
+
+/* header  */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 8em;
+  padding: 1.5%;
+  background-color: #f8f8f8;
+}
+header .logo {
+  width: 28%;
+  height: auto;
+}
+header nav {
+  margin-right: 5vw;
+  display: flex;
+}
+header menu,
+footer menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+header li,
+footer li {
+  padding: 0 2vw;
+  font-size: 1.3em;
+}
+header li a,
+footer li a {
+  text-decoration: none;
+  transition: all .25s linear;
+}
+
+/* video */
+.video-masthead {
+  height: 100vh;
+  position: relative;
+}
+#video-background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+.tagline-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+.video-masthead h1 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  font-size: 6em;
+  letter-spacing: 4vw;
+  line-height: 19vh;
+  text-shadow: 0.2vw 0.1vh 0.2vw rgba(0, 0, 0, .8);
+  transition: all 0.3s ease-in-out;
+  color: #f8f8f8;
+}
+.video-masthead:hover .tagline-container h1 {
+  text-shadow: 0.3vw 0.2vh 0.3vw rgba(0, 0, 0, 0.9);
+}
+
+/* main */
+.why-celsius {
+  text-align: center;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-celsius div {
+  max-width: 50em;
+  margin: 0 auto;
+}
+.why-celsius h2 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.why-celsius p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-right: 2vw;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.why-celsius img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+.why-celsius img:hover {
+  transform: rotateY(180deg);
+}
+
+/* footer  */
+footer {
+  padding: 1.5%;
+}
+.footer-logo .logo {
+  width: 15%;
+  height: auto;
+}
+footer nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-form p {
+  margin-right: 1vw;
+}
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form input[type="submit"] {
+  width: calc(50% - 0.5);
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+.footer-form input[type="submit"] {
+  margin-top: 4.7%;
+}
+.footer-form label {
+  font-size: 1.2em;
+  margin-right: 1vw;
+}
